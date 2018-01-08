@@ -1,7 +1,7 @@
 {
   "en": {
     "searchPage": {
-      "uploadLabel": "Upload Files",
+      "uploadLabel": "Push Files",
       "viewLabel": "View",
       "detailedViewLabel": "Detailed",
       "tableViewLabel": "Table",
@@ -90,8 +90,8 @@
     },
     "settingsPage": {
       "pageTitle": "Settings",
-      "noCrawlersLabel": "No crawlers",     
-      "noCrawlersDescriptionLabel": "No crawlers defined yet...",     
+      "noCrawlersLabel": "No crawlers",
+      "noCrawlersDescriptionLabel": "No crawlers defined yet...",
       "noCrawlersHintLabel": "Use \"Plus\" button to create your first crawler",
       "cancelLabel": "Cancel",
       "createLabel": "Create",
@@ -135,7 +135,7 @@
       "weakPasswordLabel": "Password is too weak",
       "differentPasswordsLabel": "Passwords are not equal",
       "addDigitsLabel": "Add at least one digit [0-9]",
-      "addLowerCaseCharLabel":"Add at least one lower-case char [a-z]",
+      "addLowerCaseCharLabel": "Add at least one lower-case char [a-z]",
       "addUpperCaseCharLabel": "Add at least one upper-case char [A-Z]",
       "tooShortPasswordLabel": "Password should be at least 8 characters long"
     },
@@ -162,11 +162,11 @@
       "emailLabel": "E-mail",
       "nameLabel": "Name",
       "langAnalyzerLabel": "Language Analyzer",
-      "performSignupLabel": "Sing Up",
+      "performSignupLabel": "Sign Up",
       "haveAccountLabel": "Already have an account?",
       "nameRequiredLabel": "Name is required",
       "emailRequiredLabel": "E-mail is required",
-      "emailAddressInvalidLabel": "E-mail address is invalid"      
+      "emailAddressInvalidLabel": "E-mail address is invalid"
     },
     "checkEmailPage": {
       "pageTitle": "Check Your Inbox",
@@ -183,7 +183,7 @@
       "passwordWeakLabel": "Password is too weak",
       "diffPasswordsLabel": "Passwords are not equal",
       "addDigitsLabel": "Add at least one digit [0-9]",
-      "addLowerCaseCharLabel":"Add at least one lower-case char [a-z]",
+      "addLowerCaseCharLabel": "Add at least one lower-case char [a-z]",
       "addUpperCaseCharLabel": "Add at least one upper-case char [A-Z]",
       "tooShortPasswordLabel": "Password should be at least 8 characters long"
     }
@@ -279,8 +279,8 @@
     },
     "settingsPage": {
       "pageTitle": "Настройки",
-      "noCrawlersLabel": "Нет краулеров",     
-      "noCrawlersDescriptionLabel": "Пока не создан ни один краулер",     
+      "noCrawlersLabel": "Нет краулеров",
+      "noCrawlersDescriptionLabel": "Пока не создан ни один краулер",
       "noCrawlersHintLabel": "Нажмите кнопку \"Плюс\" чтобы создать краулер",
       "cancelLabel": "Отмена",
       "createLabel": "Создать",
@@ -324,7 +324,7 @@
       "weakPasswordLabel": "Слишком простой пароль",
       "differentPasswordsLabel": "Пароли не совпадают",
       "addDigitsLabel": "Добавьте по крайней мере одну цифру [0-9]",
-      "addLowerCaseCharLabel":"Добавьте по крайней мере один символ нижнего регистра [a-z]",
+      "addLowerCaseCharLabel": "Добавьте по крайней мере один символ нижнего регистра [a-z]",
       "addUpperCaseCharLabel": "Добавьте по крайней мере один символ верхнего регистра [A-Z]",
       "tooShortPasswordLabel": "Длина пароля должна быть не менее 8 символов"
     },
@@ -355,7 +355,7 @@
       "haveAccountLabel": "Уже зарегистрированы?",
       "nameRequiredLabel": "Укажите ник",
       "emailRequiredLabel": "Укажите эл. почту",
-      "emailAddressInvalidLabel": "Неправильный адрес эл. почты"    
+      "emailAddressInvalidLabel": "Неправильный адрес эл. почты"
     },
     "checkEmailPage": {
       "pageTitle": "Проверьте ваш почтовый ящик",
@@ -372,9 +372,9 @@
       "passwordWeakLabel": "Слишком простой пароль",
       "diffPasswordsLabel": "Пароли не совпадают",
       "addDigitsLabel": "Добавьте по крайней мере одну цифру [0-9]",
-      "addLowerCaseCharLabel":"Добавьте по крайней мере один символ нижнего регистра [a-z]",
+      "addLowerCaseCharLabel": "Добавьте по крайней мере один символ нижнего регистра [a-z]",
       "addUpperCaseCharLabel": "Добавьте по крайней мере один символ верхнего регистра [A-Z]",
       "tooShortPasswordLabel": "Длина пароля должна быть не менее 8 символов"
     }
-  }  
+  }
 }
