@@ -3,7 +3,7 @@ import CircularProgress from 'material-ui/CircularProgress'
 import classes from './LoadingIndicator.scss'
 
 const LoadingIndicator = (props) => {
-    const { small, medium, large, freezed = false, blurred = false, color = '#00bcd4' } = props
+    const { small, medium, large, freezed = false, blurred = false, color = '#00BCD4' } = props
     const indicatorSize = (small ? 23 : (medium ? 40 : (large ? 50 : 40))) 
     const mode = freezed ? 'determinate' : 'indeterminate'
     const className = blurred ? classes.circularProgressBlurred : classes.circularProgress

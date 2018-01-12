@@ -83,14 +83,14 @@ class TableRowResult extends Component {
                 <TableRowColumn style={{ width: '220px' }}>
                     <IconButton onTouchTap={() => { window.open(downloadUri) }}
                         title='Download File'>
-                        <FileDownloadIcon color='#00bcd4' hoverColor='#80deea' />
+                        <FileDownloadIcon color='#00BCD4' hoverColor='#80deea' />
                     </IconButton>
                     <IconButton
                         disabled={!files.doesFileContainText(meta)}
                         onTouchTap={() => openTextPreview(fileId)}
                         title='Text Preview'
                     >
-                        <TextPreviewIcon color='#00bcd4' hoverColor='#80deea' />
+                        <TextPreviewIcon color='#00BCD4' hoverColor='#80deea' />
                     </IconButton>
                     <IconButton
                         disabled={!(contentHighlight && content.thumb_available)}
@@ -98,13 +98,13 @@ class TableRowResult extends Component {
                             toggleImagePreview(thumbnailUri)
                         }}
                         title='Image Preview'>
-                        <ImagePreviewIcon color='#00bcd4' hoverColor='#80deea' />
+                        <ImagePreviewIcon color='#00BCD4' hoverColor='#80deea' />
                     </IconButton>
                     {!hidden_mark && <IconButton onTouchTap={() => hideFile(fileId)} title='Remove'>
-                        <DeleteIcon color='#00bcd4' hoverColor='#80deea' />
+                        <DeleteIcon color='#00BCD4' hoverColor='#80deea' />
                     </IconButton>}
                     {(isHidden || hidden_mark) && <IconButton onTouchTap={() => showFile(fileId)} title='Restore'>
-                        <UndoIcon color='#00bcd4' hoverColor='#80deea' />
+                        <UndoIcon color='#00BCD4' hoverColor='#80deea' />
                     </IconButton>}
                 </TableRowColumn>
             </TableRow>
