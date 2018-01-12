@@ -8,7 +8,7 @@ import Divider from 'material-ui/Divider'
 import Avatar from 'material-ui/Avatar'
 import Subheader from 'material-ui/Subheader'
 import Toggle from 'material-ui/Toggle'
-import { cyan500, gray500 } from 'material-ui/styles/colors'
+import { blueGrey500, blueGrey500 } from 'material-ui/styles/colors'
 
 import classes from './Sources.scss'
 
@@ -27,7 +27,7 @@ const Sources = (props) => {
             {sources && Array.from(sources.values()).map(source =>
                 <ListItem
                     key={source.id}
-                    leftAvatar={<Avatar icon={source.type === 'bucket' ? <FileFolder /> : <BugReport />} backgroundColor={source.selected ? cyan500 : gray500} />}
+                    leftAvatar={<Avatar icon={source.type === 'bucket' ? <FileFolder /> : <BugReport />} backgroundColor={source.selected ? blueGrey500 : blueGrey500} />}
                     primaryText={source.id}
                     secondaryText={source.description}
                     rightToggle={<Toggle toggled={source.selected} onToggle={() => toggleSourceSelected(source.id)} />}

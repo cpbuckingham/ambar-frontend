@@ -8,7 +8,7 @@ import RaisedButton from 'material-ui/RaisedButton'
 import { List, ListItem } from 'material-ui/List'
 import { FullScreenPattern } from 'components/BasicComponents'
 import { LoadingIndicator } from 'components/BasicComponents'
-import { cyan500, gray500, gray200 } from 'material-ui/styles/colors'
+import { blueGrey500500, gray500, gray200 } from 'material-ui/styles/colors'
 import classes from './Dropbox.scss'
 
 const stripFolderPath = (path) => path.slice(1).substring(path.lastIndexOf('/'))
@@ -24,7 +24,7 @@ const folderItem = (folder, loadDropboxFolder, toggleOpenDropboxFolder, toggleSe
     leftAvatar={<Avatar
       style={{ cursor: 'pointer' }}
       icon={folder.fetching ? <LoadingIndicator small color={'#ffffff'} /> : <FileFolder />}
-      backgroundColor={folder.selected ? cyan500 : gray500}
+      backgroundColor={folder.selected ? blueGrey500500 : gray500}
       onTouchTap={(event) => {
         if (folder.fetching) {
           return
