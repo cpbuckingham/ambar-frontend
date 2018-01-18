@@ -83,7 +83,8 @@ class Search extends Component {
                         left: 0,
                         right: 0,
                         boxShadow: '0 0 15px rgba(0, 0, 0, 0.4)',
-                        padding: '0'
+                        padding: '0',
+                        background-color: '#607D8B'
                     }}>
                         <SideMenu
                             performSearchByQuery={performSearchByQuery}

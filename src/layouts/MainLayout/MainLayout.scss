@@ -1,5 +1,5 @@
 :global .pageContainer {
-    max-width: 1200px;    
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -12,6 +12,6 @@
 }
 
 :global ::-webkit-scrollbar-thumb {
-    background-color: darkgrey;
+    background-color: darkGrey;
     outline: 1px solid slategrey;
 }
