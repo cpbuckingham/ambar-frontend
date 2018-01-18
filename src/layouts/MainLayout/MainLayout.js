@@ -37,6 +37,7 @@ class MainLayout extends Component {
                 <div style={{ height: '100%' }}>
                     {fetching && <LinearProgress style={{ position: 'fixed', top: '64px', zIndex: '2000' }} color="#FFAB00" />}
                     <AppBar
+                      style={{ backgroundColor: '#607d8b'}}
                         title={<AppBarTitle
                             data={header}
                             fetching={fetching}
@@ -51,7 +52,7 @@ class MainLayout extends Component {
                             toggleMainMenu={toggleSideMenu}
                             changeLocation={changeLocation}
                             mode={mode}
-                            allowedRoutes={allowedRoutes} 
+                            allowedRoutes={allowedRoutes}
                             auth={auth}
                             performLogout={performLogout}
                             localization={localization}

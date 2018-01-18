@@ -2,7 +2,6 @@ import React, { Component, PropTypes } from 'react'
 import { Router } from 'react-router'
 import { Provider } from 'react-redux'
 import getMuiTheme from 'material-ui/styles/getMuiTheme'
-import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme'
 import injectTapEventPlugin from 'react-tap-event-plugin'
 
 class AppContainer extends Component {
@@ -27,7 +26,7 @@ class AppContainer extends Component {
 
   getChildContext() {
     return {
-      muiTheme: getMuiTheme(darkBaseTheme)
+      muiTheme: getMuiTheme()
     }
   }
 
