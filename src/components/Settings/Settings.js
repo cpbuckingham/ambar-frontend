@@ -86,7 +86,6 @@ class Settings extends Component {
                                 className={classes.addButton}
                                 title={localization.settingsPage.createCrawlerModalTitleLabel}
                                 zDepth={4}
-                                secondary={true}
                                 onTouchTap={() => setCreateCrawlerModalOpen(newCrawler, true)}>
                                 <ContentAdd />
                             </FloatingActionButton>
