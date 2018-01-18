@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react'
 import { Router } from 'react-router'
 import { Provider } from 'react-redux'
+import {blueGrey500} from 'material-ui/styles/colors'
 import getMuiTheme from 'material-ui/styles/getMuiTheme'
 import injectTapEventPlugin from 'react-tap-event-plugin'
 
@@ -9,6 +10,14 @@ class AppContainer extends Component {
     history: PropTypes.object.isRequired,
     routes: PropTypes.object.isRequired,
     store: PropTypes.object.isRequired
+  }
+
+  componentWillMount () {
+    let newMuiTheme = this.state.muiTheme
+    newMuiTheme.appBar.color = blueGrey500
+    this.setState({
+        muiTheme: newMuiTheme
+    })
   }
 
   static childContextTypes =
@@ -26,7 +35,7 @@ class AppContainer extends Component {
 
   getChildContext() {
     return {
-      muiTheme: getMuiTheme()
+      muiTheme: this.state.muiTheme,
     }
   }
 
