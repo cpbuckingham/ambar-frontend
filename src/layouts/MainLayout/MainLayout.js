@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react'
 import MainMenu from './components/MainMenu'
 import RateUs from './components/RateUs'
 import { AmbarResponsiveLogo } from 'components/BasicComponents'
+import { blueGrey500 } from 'material-ui/styles/colors'
 import AppBarTitle from './components/AppBarTitle'
 import AppBar from 'material-ui/AppBar'
 import MediaQuery from 'react-responsive'
@@ -34,9 +35,9 @@ class MainLayout extends Component {
 
         return (
             <div style={{ height: '100%' }}>
-                <div style={{ height: '100%', color="#607D8B" }}>
+                <div style={{ height: '100%', color:'#607D8B' }}>
                     {fetching && <LinearProgress style={{ position: 'fixed', top: '64px', zIndex: '2000' }} color="#FFAB00" />}
-                    <AppBar
+                    <AppBar style={{backgroundColor: blueGrey500}}>
                       backgroundColor='#607D8B'
                         title={<AppBarTitle
                             data={header}
@@ -44,7 +45,7 @@ class MainLayout extends Component {
                             currentApplicationState={state}
 
                         />}
-                        style={{ position: 'fixed', top: 0, left: 0, color="#607D8B"}}
+                        style={{ position: 'fixed', top: 0, left: 0, backgroundColor:'#607D8B'}}
                         zDepth={2}
                         backgroundColor='#607D8B'
                         onRightIconButtonTouchTap={toggleSideMenu}
