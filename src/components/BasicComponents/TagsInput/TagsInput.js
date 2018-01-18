@@ -71,7 +71,7 @@ class TagsInput extends Component {
     }
 
     onKeyDown(event) {
-        if (event.keyCode === 8) { // onBackspace            
+        if (event.keyCode === 8) { // onBackspace
             if (!this.state.inputValue) {
                 this.removeLastTag()
                 return
@@ -171,7 +171,7 @@ class TagsInput extends Component {
                 padding: '2px 4px'
             },
             suggestionHighlighted: {
-                backgroundColor: 'rgba(0, 188, 212, 0.15)'
+                backgroundColor: 'rgba(96,125,139,0.15)'
             }
         }
 
@@ -235,7 +235,3 @@ TagsInput.propTypes = {
 }
 
 export default TagsInput
-
-
-
-

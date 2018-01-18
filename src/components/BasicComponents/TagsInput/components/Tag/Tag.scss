@@ -5,15 +5,15 @@
     word-break: break-all;
     font-size: 12px;
     font-family: Roboto, sans-serif;
-    color: rgb(0, 188, 212);
+    color: rgb(96,125,139);
     padding: 2px;
-    background-color: rgba(0, 188, 212, 0.08);
+    background-color: rgba(96,125,139,0.08);
     transition: background-color 0.5s ease;
     border-radius: 3px;
 }
 
 .loading {
-    background-color: rgba(0, 188, 212, 0.2);
+    background-color: rgba(96,125,139,0.2);
 }
 
 .highlight {
@@ -31,11 +31,11 @@
     color: rgb(158, 158, 158);
 }
 
-.tag > .removeTagButton {  
-    display: block;    
+.tag > .removeTagButton {
+    display: block;
     margin: 2px 1px 0 1px;
 }
 
-.tag:hover {    
+.tag:hover {
     background-color: #B2EBF2;
 }

@@ -69,7 +69,7 @@ class TagsInput extends Component {
     }
 
     onKeyDown(event) {
-        if (event.keyCode === 8) { // onBackspace            
+        if (event.keyCode === 8) { // onBackspace
             if (!this.state.inputValue) {
                 this.removeLastTag()
                 return
@@ -80,7 +80,7 @@ class TagsInput extends Component {
     focusOnInput() {
         if (!this.refs.suggestInput) {
             return
-        }        
+        }
         this.refs.suggestInput.input.focus()
     }
 
@@ -107,7 +107,7 @@ class TagsInput extends Component {
     }
 
     getSuggestions(value) {
-        
+
         const inputValue = value.trim().toLowerCase()
         const inputLength = inputValue.length
         const suggestions = this.props.suggestions
@@ -168,7 +168,7 @@ class TagsInput extends Component {
                 padding: '2px 4px'
             },
             suggestionHighlighted: {
-                backgroundColor: 'rgba(0, 188, 212, 0.15)'
+                backgroundColor: 'rgba(96,125,139,0.15)'
             }
         }
 
@@ -178,8 +178,8 @@ class TagsInput extends Component {
             <div
                 style={{ padding: '5px', cursor: 'text', display: 'flex', flexWrap: 'wrap' }}
                 className='TAGS_CONTAINER'
-                onClick={(e) => {                    
-                    if (e.target.className == 'TAGS_CONTAINER') {                        
+                onClick={(e) => {
+                    if (e.target.className == 'TAGS_CONTAINER') {
                         this.focusOnInput()
                     }
                 }}>
@@ -206,7 +206,7 @@ class TagsInput extends Component {
                     onSuggestionsClearRequested={e => this.onSuggestionsClearRequested(e)}
                     inputProps={{
                         value: this.state.inputValue,
-                        onChange: (e, { newValue, method }) => this.onChange(newValue),                        
+                        onChange: (e, { newValue, method }) => this.onChange(newValue),
                         onKeyPress: (event) => this.onKeyPress(event),
                         onKeyDown: (event) => this.onKeyDown(event)
                     }}
@@ -226,7 +226,3 @@ TagsInput.propTypes = {
 }
 
 export default TagsInput
-
-
-
-
