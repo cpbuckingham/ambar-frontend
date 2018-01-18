@@ -122,7 +122,7 @@ class Search extends Component {
                 <div>
                     <div style={{ display: 'flex', flexDirection: 'column', position: 'fixed', bottom: '10%', right: '30px', zIndex: '990' }}>
                         <FloatingActionButton
-                            backgroundColor='#FF5252'
+                            backgroundColor='#607D8B'
                             zDepth={4}
                             onTouchTap={() => { this.containerNode.scrollTop = 0 }}
                             className={scrolledDown ? '' : 'hiddenWithAnimation'}>

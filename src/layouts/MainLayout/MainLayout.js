@@ -37,7 +37,7 @@ class MainLayout extends Component {
                 <div style={{ height: '100%' }}>
                     {fetching && <LinearProgress style={{ position: 'fixed', top: '64px', zIndex: '2000' }} color="#FFAB00" />}
                     <AppBar
-                    backgroundColor='#FF5252'
+                      backgroundColor='#607D8B'
                         title={<AppBarTitle
                             data={header}
                             fetching={fetching}
@@ -46,6 +46,7 @@ class MainLayout extends Component {
                         />}
                         style={{ position: 'fixed', top: 0, left: 0 }}
                         zDepth={2}
+                        backgroundColor='#607D8B'
                         onRightIconButtonTouchTap={toggleSideMenu}
                         iconElementRight={<MainMenu
                             isOpen={isSideMenuOpen}

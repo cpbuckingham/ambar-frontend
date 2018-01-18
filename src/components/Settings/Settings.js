@@ -82,7 +82,7 @@ class Settings extends Component {
                     <div>
                         <div style={{ display: 'flex', position: 'fixed', bottom: '10%', right: '20px' }}>
                             <FloatingActionButton
-                                backgroundColor='#607d8b'
+                                backgroundColor='#607D8B'
                                 className={classes.addButton}
                                 title={localization.settingsPage.createCrawlerModalTitleLabel}
                                 zDepth={4}
