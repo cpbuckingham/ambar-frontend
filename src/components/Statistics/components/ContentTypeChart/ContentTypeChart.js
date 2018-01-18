@@ -3,7 +3,7 @@ import { PieChart, Pie, Legend, Tooltip, Cell, ResponsiveContainer } from 'recha
 // import classes from './ContentTypeChart.scss'
 
 const minTresholdInPercents = 0.05
-const colors = ['#B2EBF2','#80DEEA','#4DD0E1','#26C6DA','#00BCD4','#00ACC1','#0097A7','#00838F']
+const colors = ['#B2EBF2','#80DEEA','#4DD0E1','#26C6DA','#607D8B','#00ACC1','#0097A7','#00838F']
 const otherColor = '#DCE775'
 
 const renderCustomizedLabel = (minThreshold) => ({name, value, percent}) => {      

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { PieChart, Pie, Tooltip, Cell } from 'recharts'
 import classes from './ExtensionsPieChart.scss'
 
-const colors = ['#B2EBF2','#80DEEA','#4DD0E1','#26C6DA','#00BCD4','#00ACC1','#0097A7','#00838F']
+const colors = ['#B2EBF2','#80DEEA','#4DD0E1','#26C6DA','#607D8B','#00ACC1','#0097A7','#00838F']
 const otherColor = '#DCE775'
 
 const DEFAULT_ON_CLICK = () => { }

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts'
 // import classes from './ProcessingRateChart.scss'
 
-const colors = ['#80DEEA','#4DD0E1','#26C6DA','#00BCD4','#00ACC1','#0097A7','#00838F']
+const colors = ['#80DEEA','#4DD0E1','#26C6DA','#607D8B','#00ACC1','#0097A7','#00838F']
 
 const renderCustomizedLabel = ({ name, value, percent }) => {
     return `${name} (${(percent * 100).toFixed(0)}%)`

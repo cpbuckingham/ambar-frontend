@@ -50,7 +50,7 @@ const UploadFileModal = (props) => {
     }
 
     const uploadFrameActiveStyle = {
-        borderColor: '#00BCD4'
+        borderColor: '#607D8B'
     }
 
     return (
@@ -71,7 +71,7 @@ const UploadFileModal = (props) => {
                     maxSize={100 * 1024 * 1024}
                     multiple={true}>
                     {!fetching && <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: '100%' }}>
-                        <UploadIcon style={{ display: 'flex', flexGrow: 2, color: '#00BCD4', width: '100%', opacity: 0.25 }} />
+                        <UploadIcon style={{ display: 'flex', flexGrow: 2, color: '#607D8B', width: '100%', opacity: 0.25 }} />
                         <div style={{ marginBottom: '5px' }}>{localization.uploadModal.hintLabel}</div>
                     </div>}
                     {fetching && <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>

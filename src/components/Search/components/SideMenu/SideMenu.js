@@ -36,7 +36,7 @@ class SideMenu extends Component {
                 <RaisedButton
                     label={localization.searchPage.uploadLabel}
                     style={{ margin: '-2px 16px 16px 16px' }}
-                    labelColor={'#00BCD4'}
+                    labelColor={'#607D8B'}
                     backgroundColor={'#ffffff'}
                     icon={<UploadFileIcon />}
                     onTouchTap={toggleUploadModal}
