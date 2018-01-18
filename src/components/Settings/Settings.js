@@ -55,7 +55,7 @@ class Settings extends Component {
         return (
             <div className='pageContainer'>
                 {!fetching &&
-                    <PipelineCard 
+                    <PipelineCard
                         pipeline={pipeline}
                         loadPipelineLog={loadPipelineLog}
                         localization={localization}
@@ -82,7 +82,7 @@ class Settings extends Component {
                     <div>
                         <div style={{ display: 'flex', position: 'fixed', bottom: '10%', right: '20px' }}>
                             <FloatingActionButton
-                                backgroundColor='#FF5252'
+                                backgroundColor='#607d8b'
                                 className={classes.addButton}
                                 title={localization.settingsPage.createCrawlerModalTitleLabel}
                                 zDepth={4}

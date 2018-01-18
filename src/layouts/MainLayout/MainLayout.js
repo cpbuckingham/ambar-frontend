@@ -37,11 +37,12 @@ class MainLayout extends Component {
                 <div style={{ height: '100%' }}>
                     {fetching && <LinearProgress style={{ position: 'fixed', top: '64px', zIndex: '2000' }} color="#FFAB00" />}
                     <AppBar
-                      style={{ backgroundColor: '#607d8b'}}
+                    backgroundColor='#FF5252'
                         title={<AppBarTitle
                             data={header}
                             fetching={fetching}
                             currentApplicationState={state}
+
                         />}
                         style={{ position: 'fixed', top: 0, left: 0 }}
                         zDepth={2}
