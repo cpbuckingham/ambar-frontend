@@ -2,11 +2,11 @@ import React, { Component, PropTypes } from 'react'
 import MainMenu from './components/MainMenu'
 import RateUs from './components/RateUs'
 import { AmbarResponsiveLogo } from 'components/BasicComponents'
-import { blueGrey500 } from 'material-ui/styles/colors'
 import AppBarTitle from './components/AppBarTitle'
 import AppBar from 'material-ui/AppBar'
 import MediaQuery from 'react-responsive'
 import LinearProgress from 'material-ui/LinearProgress'
+import { blueGrey500 } from 'material-ui/styles/colors'
 
 import classes from './MainLayout.scss'
 
@@ -33,21 +33,24 @@ class MainLayout extends Component {
             localization
         } = this.props
 
+        const styles = {
+          appBar: { backgroundColor: blueGrey500 }
+        }
+
+
         return (
             <div style={{ height: '100%' }}>
-                <div style={{ height: '100%', color:'#607D8B' }}>
+                <div style={{ height: '100%' }}>
                     {fetching && <LinearProgress style={{ position: 'fixed', top: '64px', zIndex: '2000' }} color="#FFAB00" />}
-                    <AppBar style={{backgroundColor: blueGrey500}}>
-                      backgroundColor='#607D8B'
+                    <AppBar
+                    style={styles.appbar}
                         title={<AppBarTitle
                             data={header}
                             fetching={fetching}
                             currentApplicationState={state}
-
                         />}
-                        style={{ position: 'fixed', top: 0, left: 0, backgroundColor:'#607D8B'}}
+                        style={{ position: 'fixed', top: 0, left: 0 }}
                         zDepth={2}
-                        backgroundColor='#607D8B'
                         onRightIconButtonTouchTap={toggleSideMenu}
                         iconElementRight={<MainMenu
                             isOpen={isSideMenuOpen}
