@@ -3,10 +3,10 @@ import { PieChart, Pie, Legend, Tooltip, Cell, ResponsiveContainer } from 'recha
 // import classes from './ContentTypeChart.scss'
 
 const minTresholdInPercents = 0.05
-const colors = ['#B2EBF2','#80DEEA','#4DD0E1','#26C6DA','#607D8B','#00ACC1','#0097A7','#00838F']
+const colors = ['#607D8B','#4DD0E1','#26C6DA','##80DEEA','#00ACC1','#0097A7','#00838F','#00838F']
 const otherColor = '#DCE775'
 
-const renderCustomizedLabel = (minThreshold) => ({name, value, percent}) => {      
+const renderCustomizedLabel = (minThreshold) => ({name, value, percent}) => {
     if (minThreshold > value) {
         return undefined
     }
@@ -14,7 +14,7 @@ const renderCustomizedLabel = (minThreshold) => ({name, value, percent}) => {
 }
 
 class ContentTypeChart extends Component {
-    render() {        
+    render() {
         const {data, minThreshold, total} = this.props.data
 
         const filteredData = data.filter(item => item.value >= minThreshold)
@@ -29,14 +29,14 @@ class ContentTypeChart extends Component {
         return (
             <ResponsiveContainer aspect={2}>
                 <PieChart>
-                    <Pie 
+                    <Pie
                         isAnimationActive={false}
-                        data={filteredData} 
-                        outerRadius='100%'  
-                        innerRadius='40%'                     
+                        data={filteredData}
+                        outerRadius='100%'
+                        innerRadius='40%'
                         cx='50%'
                         labelLine={false}
-                        >                        
+                        >
                         { filteredData.map((entry, index) => <Cell key={index} fill={entry.name === 'Other' ? otherColor : colors[index % colors.length]}/>) }
                     </Pie>
                     <Tooltip />

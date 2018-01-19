@@ -8,7 +8,7 @@ import RaisedButton from 'material-ui/RaisedButton'
 import { List, ListItem } from 'material-ui/List'
 import { FullScreenPattern } from 'components/BasicComponents'
 import { LoadingIndicator } from 'components/BasicComponents'
-import { blueGrey500500, gray500, gray200 } from 'material-ui/styles/colors'
+import { blueGrey500, gray500, gray200 } from 'material-ui/styles/colors'
 import classes from './Dropbox.scss'
 
 const stripFolderPath = (path) => path.slice(1).substring(path.lastIndexOf('/'))

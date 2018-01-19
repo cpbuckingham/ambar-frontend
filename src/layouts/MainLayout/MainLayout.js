@@ -6,9 +6,10 @@ import AppBarTitle from './components/AppBarTitle'
 import AppBar from 'material-ui/AppBar'
 import MediaQuery from 'react-responsive'
 import LinearProgress from 'material-ui/LinearProgress'
-import { blueGrey500 } from 'material-ui/styles/colors'
+import { blueGrey500, gray500, gray200 } from 'material-ui/styles/colors'
 
 import classes from './MainLayout.scss'
+
 
 class MainLayout extends Component {
     render() {
@@ -33,23 +34,19 @@ class MainLayout extends Component {
             localization
         } = this.props
 
-        const styles = {
-          appBar: { backgroundColor: blueGrey500 }
-        }
-
 
         return (
             <div style={{ height: '100%' }}>
                 <div style={{ height: '100%' }}>
                     {fetching && <LinearProgress style={{ position: 'fixed', top: '64px', zIndex: '2000' }} color="#FFAB00" />}
-                    <AppBar
-                    style={styles.appbar}
+                    <AppBar style={{backgroundColor: blueGrey500, Color: blueGrey500}}
+                    backgroundColor='#607D8B'
                         title={<AppBarTitle
                             data={header}
                             fetching={fetching}
                             currentApplicationState={state}
                         />}
-                        style={{ position: 'fixed', top: 0, left: 0 }}
+                        style={{ position: 'fixed', top: 0, left: 0, backgroundColor: blueGrey500, Color: blueGrey500 }}
                         zDepth={2}
                         onRightIconButtonTouchTap={toggleSideMenu}
                         iconElementRight={<MainMenu
@@ -63,14 +60,14 @@ class MainLayout extends Component {
                             performLogout={performLogout}
                             localization={localization}
                         />}
-                        iconElementLeft={<div style={{ display: 'flex', flexDirection: 'row' }}>
+                        iconElementLeft={<div style={{ display: 'flex', flexDirection: 'row', backgroundColor: blueGrey500, Color: blueGrey500 }}>
                             {mode !== 'ee' && <MediaQuery query='(min-width: 1024px)'>
                                 <RateUs isOpen={showRateUsModal} toggle={toggleRateUsModal} />
                             </MediaQuery>}
                             <AmbarResponsiveLogo version={version} mode={mode} />
                         </div>}
                     />
-                    <div style={{ width: '100%', height: '100%', overflowY: 'hidden', paddingTop: '64px' }}>
+                    <div style={{ width: '100%', height: '100%', overflowY: 'hidden', paddingTop: '64px'}}>
                         <div style={{ height: '100%', overflowY: 'auto' }}>
                             {React.cloneElement(children, { setPageTitle: setPageTitle, setAppHeader: setAppHeader })}
                         </div>
